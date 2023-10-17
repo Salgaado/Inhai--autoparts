@@ -6278,8 +6278,9 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  background-color:#003658;
+  background: linear-gradient(270deg, #FFED00 0.69%, #F5F1B6 13.11%, #FEEC06 25%, #FDEB11 75.69%, #F5F1B6 87.59%, #FFED00 100%);
 }
+
 .offcanvas-header .btn-close {
   padding: 0.5rem 0.5rem;
   margin-top: -0.5rem;
@@ -6291,7 +6292,7 @@ textarea.form-control-lg {
   margin-bottom: 0;
   line-height: 1.5;
   font-size: 20px;
-  color: #EBE3D6;
+  color: #000;
   font-family: "Poppins" !important;
   text-transform: uppercase;
   font-weight: 700;
@@ -6301,7 +6302,7 @@ textarea.form-control-lg {
   flex-grow: 1;
   padding: 1rem 1rem;
   /* overflow-y: auto; */
-  background: #EBE3D6;
+  background: rgba(54, 53, 53, 1);
 }
 
 .offcanvas-start {
@@ -13060,24 +13061,22 @@ font-size: 12px;
   }
 
   .img-header{
-    width: 7rem;
+    width: 5rem;
   }
 
   .frame-1-mobile{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #003658;
+    background-color: #000;
     width: 100%;
     height: 5rem;
   }
 
   .frame-1-1-mobile > button{
-    border: solid 1px #EBE3D6;
-    border-radius: 50px;
+    border: none;
     padding: 10px;
     background-color: inherit;
-    background-color: #EBE3D6 ;
   }
 
 
@@ -13085,23 +13084,27 @@ font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 8px;
   }
 
-  .frame-1-3-mobile > a{
-    border: solid 1px #EBE3D6;
-    border-radius: 50px;
-    padding: 5px;
+  .frame-1-3-mobile a{
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    font-size: 9px;
+    color: #FFED00 !important;
+    text-decoration: none;
+    gap: 3px;
   }
-
-  
   .frame-bttn-mobile{
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#003658;
-    background-color: #003658;
+    color:#000;
+    background-color: inherit;
     border: none;
+    font-size: 20px;
+    font-weight: 700;
   }
 
   .frame-bttn-mobile > img{
@@ -13129,8 +13132,9 @@ font-size: 12px;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-    color: #003658 !important;
+    color: #FFED00 !important;
     cursor: pointer;
+    border-bottom: 1px solid #FFED00;
   }
 
 
@@ -13157,7 +13161,7 @@ font-size: 12px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-bottom: solid 1px #003658;
+    border-bottom: solid 1px #FFED00;
     margin-bottom: 1rem;
   }
 
@@ -13176,13 +13180,13 @@ font-size: 12px;
   .form-mobile > button{
     border-radius: 30px;
     padding: 0;
-    background-color: #EBE3D6;
+    background-color: inherit;
     border: none;
   }
   
 
   .form-mobile > button > span > svg > path{
-    fill: #003658;
+    fill: #FFED00;
   }
 
   
@@ -13249,7 +13253,9 @@ font-weight: 800;
 color: #000;
 }
 
-
+.border-right{
+  border-right: solid 1px #fff;
+}
 
 .container-footer{
   max-width: 1720px;
@@ -13338,6 +13344,11 @@ color: #000;
       width: 50%;
       margin-bottom: 30px;
   }
+
+  .border-right{
+    border-right: none;
+  }
+  
 }
 @media (max-width:900px) {
   .img-footer{
@@ -13393,9 +13404,7 @@ color: #000;
 
 /* extras */
 
-.border-right{
-  border-right: solid 1px #fff;
-}
+
 
 
 
