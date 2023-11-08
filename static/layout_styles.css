@@ -13213,7 +13213,7 @@ font-size: 12px;
   background: radial-gradient(39.16% 23.02% at 31.67% 15.06%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0) 100%);
   border-top-left-radius: 41px;
   border-top-right-radius: 41px;
-  border: 2px rgba(255, 255, 255, 0.40) solid;
+  border: 2px #80808030 solid;
   backdrop-filter: blur(9px);
   gap: 0.5rem;
   position: relative;
@@ -13377,7 +13377,32 @@ color: #000;
   .border-right{
     border-right: none;
   }
-  
+
+  .badge-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12rem;
+    width: 173px;
+    height: 40px;
+    background: radial-gradient(39.16% 23.02% at 31.67% 15.06%,rgba(255,255,255,0.40) 0,rgba(255,255,255,0) 100%);
+    border-top-left-radius: 41px;
+    border-top-right-radius: 41px;
+    border: 2px #80808030 solid;
+    backdrop-filter: blur(9px);
+    position: relative;
+    z-index: 1000;
+    top: -94px;
+  }
+
+  .badge-frame span{
+    font-size: 8px;
+  }
+
+  .badge-frame img{
+    width: 6rem;
+  }
 }
 @media (max-width:900px) {
   .img-footer{
@@ -13428,15 +13453,5 @@ color: #000;
   overflow-x: clip;
   padding: 0 !important;
 }
-
-
-
-/* extras */
-
-
-
-
-
-
 
 
